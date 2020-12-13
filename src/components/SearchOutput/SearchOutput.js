@@ -22,8 +22,8 @@ const SearchOutput = (props) => {
                     <SearchResult
                         key={index}
                         title={result.title}
-                        authors={result.authors}
-                        link={result.link}
+                        overview={result.overview}
+                        releaseDate={result.release_date}
                     />
                 );
             })

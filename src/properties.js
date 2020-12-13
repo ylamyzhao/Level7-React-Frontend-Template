@@ -1,10 +1,10 @@
 export const properties = {
-    courseName: 'Level 7 Animal Search',
-    endpoint: 'https://cheetah.api.jointheleague.org?q=',
-    description: 'Here is a brief description of the project.  Try to keep it to two or three sentences',
-    backendSwaggerUrl: 'https://cheetah.api.jointheleague.org/',
-    createdBy: 'Student One, Student Two, Student Three',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Cheetah-Search'
+    courseName: 'Level 7 Jerboa Search',
+    endpoint: 'https://jerboa.api.jointheleague.org/search/searchKeyword?q=',
+    description: 'Jerboa Search is a Spring Boot REST API that allows users to search for movies by keyword. This React page communicates with the Jerboa Search application, which returns movies from the themoviedb.com',
+    backendSwaggerUrl: 'https://jerboa.api.jointheleague.org/',
+    createdBy: 'Even Adami, Drey Chan, Garret Kunkler, Christopher Lee, Dalia Sebat',
+    repositoryUrl: 'https://github.com/LEAGUE-Level7/Jerboa-Search'
 };
 
 /*
