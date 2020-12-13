@@ -5,7 +5,7 @@ const SearchResult = (props) => {
     console.log(props);
     return (
         <article className={classes.Result}>
-            <h1>Title: {props.title}</h1>
+            <h1>{props.title}</h1>
             <p>{props.overview}</p>
            <h4>Released: {props.releaseDate}</h4>
         </article>
