@@ -29,6 +29,27 @@
     border-color: #ff2058;
 }
 
+.Radio {
+    width: 5em;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.RadioText {
+    float: left;
+    font-size: medium;
+    padding-top: .6em;
+    position: relative;
+    right: 1.5em;
+}
+
+.RadioWrapper {
+    width: 20em;
+    margin: 0 auto;
+}
+
 @media (min-width: 768px) {
     .SearchInput {
         flex-direction: row;

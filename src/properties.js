@@ -1,6 +1,6 @@
 export const properties = {
     courseName: 'Level 7 Jerboa Search',
-    endpoint: 'https://jerboa.api.jointheleague.org/search/searchKeyword?q=',
+    endpoint: 'https://jerboa.api.jointheleague.org/search/',
     description: 'Jerboa Search is a Spring Boot REST API that allows users to search for movies by keyword. This React page communicates with the Jerboa Search application, which returns movies from the themoviedb.com',
     backendSwaggerUrl: 'https://jerboa.api.jointheleague.org/',
     createdBy: 'Even Adami, Drey Chan, Garrett Kunkler, Christopher Lee, Dalia Sebat',

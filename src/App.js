@@ -10,11 +10,19 @@ function App() {
     const [input, setInput] = useState('');
     const [output, setOutput] = useState([]);
 
-    const searchHandler = query => {
+    const searchHandler = (query, endpoint) => {
         console.log("[App]:  Doing an AJAX call for query='" + query + "'.");
         setInput(query);
         setOutput([]);
-        fetch(properties.endpoint + query, {
+        let requestUrl = properties.endpoint;
+
+        if(endpoint === 'Keyword'){
+            requestUrl += 'searchKeyword?q=';
+        } else if(endpoint === 'Title') {
+            requestUrl += 'searchTitle?q='  ;
+        }
+
+        fetch(requestUrl + query, {
             headers: {
                 'Content-Type': 'application/json'
             },
