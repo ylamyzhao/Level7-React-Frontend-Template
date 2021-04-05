@@ -16,10 +16,10 @@ function App() {
         setOutput([]);
         let requestUrl = properties.endpoint;
 
-        if(endpoint === 'Keyword'){
-            requestUrl += 'searchKeyword?q=';
-        } else if(endpoint === 'Title') {
-            requestUrl += 'searchTitle?q='  ;
+        if(endpoint === 'Arriving'){
+            requestUrl += 'arriving?q=';
+        } else if(endpoint === 'Departing') {
+            requestUrl += 'departing?q='  ;
         }
 
         fetch(requestUrl + query, {
@@ -40,7 +40,7 @@ function App() {
             })
             .then(data => {
                     const results = [];
-                    data.forEach(datum => {
+                    data.data.forEach(datum => {
                         results.push(datum)
                     });
                     setOutput(results);

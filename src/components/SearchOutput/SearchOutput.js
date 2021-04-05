@@ -21,9 +21,12 @@ const SearchOutput = (props) => {
                 return (
                     <SearchResult
                         key={index}
-                        title={result.title}
-                        overview={result.overview}
-                        releaseDate={result.release_date}
+                        flightDate={result.flight_date}
+                        flightStatus={result.flight_status}
+                        departure={result.departure}
+                        arrival={result.arrival}
+                        airline={result.airline}
+                        flight={result.flight}
                     />
                 );
             })

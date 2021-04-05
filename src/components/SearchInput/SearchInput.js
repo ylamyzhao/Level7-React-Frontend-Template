@@ -3,7 +3,7 @@ import classes from './SearchInput.module.css';
 
 const SearchInput = props => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [endpoint, setEndpoint] = useState('Keyword   ');
+    const [endpoint, setEndpoint] = useState('Arriving');
 
     const searchInputHandler = event => {
         setSearchTerm(event.target.value);
@@ -32,27 +32,26 @@ const SearchInput = props => {
                             <div className={classes.Radio}>
                                 <input
                                     type="radio"
-                                    value="Keyword"
-                                    checked={endpoint === 'Keyword'}
-                                    defaultChecked
+                                    value="Arriving"
+                                    checked={endpoint === 'Arriving'}
                                     onChange={endpointInputHandler}
                                 />
                             </div>
                             <div className={classes.RadioText}>
-                                Keyword
+                                Arriving
                             </div>
                         </label>
                         <label>
                             <div className={classes.Radio}>
                                 <input
                                     type="radio"
-                                    value="Title"
-                                    checked={endpoint === 'Title'}
+                                    value="Departing"
+                                    checked={endpoint === 'Departing'}
                                     onChange={endpointInputHandler}
                                 />
                             </div>
                             <div className={classes.RadioText}>
-                                Title
+                                Departing
                             </div>
                         </label>
                     </div>

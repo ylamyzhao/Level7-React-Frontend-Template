@@ -1,10 +1,10 @@
 export const properties = {
-    courseName: 'Level 7 Jerboa Search',
-    endpoint: 'https://jerboa.api.jointheleague.org/search/',
-    description: 'Jerboa Search is a Spring Boot REST API that allows users to search for movies by keyword. This React page communicates with the Jerboa Search application, which returns movies from the themoviedb.com',
-    backendSwaggerUrl: 'https://jerboa.api.jointheleague.org/',
-    createdBy: 'Even Adami, Drey Chan, Garrett Kunkler, Christopher Lee, Dalia Sebat',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Jerboa-Search'
+    courseName: 'Level 7 Mongoose Search',
+    endpoint: 'http://localhost:8080/flights/',
+    description: 'Mongoose Search is a Spring Boot REST API that allows users to search for ariving and departing flights by airport. This React page communicates with the Mongoose Search application, which returns flight information from AviationStack.com',
+    backendSwaggerUrl: 'https://localhost:8080',
+    createdBy: 'Daniel Goldstein, Emma Li, Harrison Liew, Isaac Baloun',
+    repositoryUrl: 'https://github.com/LEAGUE-Level7/Mongoose-Search'
 };
 
 /*
