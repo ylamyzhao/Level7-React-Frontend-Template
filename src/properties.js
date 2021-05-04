@@ -1,10 +1,10 @@
 export const properties = {
-    courseName: 'Level 7 Animal Search',
-    endpoint: 'https://cheetah.api.jointheleague.org?q=',
-    description: 'Here is a brief description of the project.  Try to keep it to two or three sentences',
-    backendSwaggerUrl: 'https://cheetah.api.jointheleague.org/',
-    createdBy: 'Student One, Student Two, Student Three',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Cheetah-Search'
+    courseName: 'Level 7 Lion Search',
+    endpoint: 'http://localhost:5000/recipes?q=',
+    description: 'Lion Search is a Spring Boot REST API that allows users to search for recipes by keyword. This React page communicates with the Lion Search application, which returns recipes from the spoonacular.com API',
+    backendSwaggerUrl: 'http://localhost:5000/',
+    createdBy: 'Bryan Zublin, Lucas Han, Maxwell Fang',
+    repositoryUrl: 'https://github.com/LEAGUE-Level7/Lion-Search'
 };
 
 /*
