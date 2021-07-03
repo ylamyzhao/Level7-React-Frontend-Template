@@ -1,10 +1,10 @@
 export const properties = {
-    courseName: 'Level 7 Lion Search',
-    endpoint: 'http://localhost:5000/recipes?q=',
-    description: 'Lion Search is a Spring Boot REST API that allows users to search for recipes by keyword. This React page communicates with the Lion Search application, which returns recipes from the spoonacular.com API',
+    courseName: 'Level 7 Caterpillar Search',
+    endpoint: 'http://localhost:5000/results?q=',
+    description: 'Caterpillar search is a Spring Boot REST API that allows users to search for pet available for adoption in a given area. This React page communicates with the Caterpillar Search application, which returns pets from the petfinder.com API',
     backendSwaggerUrl: 'http://localhost:5000/',
     createdBy: 'Bryan Zublin, Lucas Han, Maxwell Fang',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Lion-Search'
+    repositoryUrl: 'https://github.com/LEAGUE-Level7/Caterpillar-Search'
 };
 
 /*

@@ -5,16 +5,19 @@ const SearchResult = (props) => {
     console.log(props);
     return <article className={classes.Result} style={{flex: 1, display: 'flex', flexDirection: 'row'}}>
         <div style={{flex: .15, paddingLeft: '0em'}}>
-            <img src={props.image} alt="Food" style={{width:'100%', height: 'auto'}}/>
+            <img src={props.photoUrl} alt="Food" style={{width: '100%', height: 'auto'}}/>
         </div>
-        <div style={{flex: .85, paddingLeft: '1em'}}>
-            <h1 style={{marginBottom: 0}}>{props.title}</h1>
-            <a href={props.sourceUrl} rel="noopener noreferrer" target="_blank">{props.sourceUrl}</a>
-            <h3 className={classes.Author}>
-                {props.ingredients && props.ingredients.map((ingredient, index) => <span key={index}>{ingredient}, </span>)}
-            </h3>
-        </div>
-    </article>
-}
+        <article className={classes.Result}>
+            <h1>Name: {props.name}</h1>
+            <h3>Primary Breed: {props.primaryBreed}</h3>
+            <h3>Type {props.type}</h3>
+            <a href={props.url} rel="noopener noreferrer" target="_blank">{props.url}</a>
+            <a href={props.photoUrl} rel="noopener noreferrer" target="_blank">{props.photoUrl}</a>
+            <h3>Age: {props.age}</h3>
+            <h3>Gender: {props.gender}</h3>
+            <h3>Description: {props.description}</h3>
 
-export default SearchResult;
+        </article>
+        }
+
+        export default SearchResult;
