@@ -7,7 +7,7 @@ const SearchOutput = (props) => {
     let message = null;
 
     if (props.term && props.results.length !== 0) {
-        message = <p>Showing {props.results.length} results</p>;
+        message = null;
     } else if (props.term) {
         message = <Spinner/>;
     } else if (props.term === null){
@@ -15,9 +15,11 @@ const SearchOutput = (props) => {
     }
 
     let searchResults = null;
-    if (props.results) {
+    if (props.results && props.results.length !== 0) {
         searchResults =
-            <Image></Image>
+            <div style={{borderWidth: 5, borderColor: 'black'}}>
+            <img src={props.results} alt="Satellite Image" style={{width:'50%', height: 'auto'}}/>
+            </div>
     }
 
     return (

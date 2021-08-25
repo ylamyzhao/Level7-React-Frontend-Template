@@ -12,7 +12,7 @@ function App() {
     const [inputDim, setInputDim] = useState('');
     const [inputDate, setInputDate] = useState('');
 
-    const [output, setOutput] = useState([]);
+    const [output, setOutput] = useState(null);
 
     const searchHandler = (lat, lon, dim, date) => {
         setInputLat(lat);
@@ -36,8 +36,12 @@ function App() {
                     setInputDate(null);
                     throw new Error("Not 2xx response")
                 } else {
-                    return setOutput(response);
+                    return response.blob();
                 }
+            })
+            .then(blob=>{
+                setOutput(URL.createObjectURL(blob));
+                // Do whatever with the img
             })
 
     }
@@ -51,7 +55,7 @@ function App() {
             </header>
             <main>
                 <SearchInput submitHandler={searchHandler}/>
-                <SearchOutput term={null} results={output}/>
+                <SearchOutput term={inputLat} results={output}/>
             </main>
             <footer>
                 <Footer/>
