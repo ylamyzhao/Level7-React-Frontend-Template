@@ -1,10 +1,10 @@
 export const properties = {
     courseName: 'Level 7 Raven Search',
-    endpoint: 'http://127.0.0.1:5000/searchNasaEarthImages',
-    description: 'Here is a brief description of the project.  Try to keep it to two or three sentences',
-    backendSwaggerUrl: 'https://cheetah.api.jointheleague.org/',
-    createdBy: 'Student One, Student Two, Student Three',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Cheetah-Search'
+    endpoint: 'http://localhost:5000/searchNasaEarthImages',
+    description: 'Raven Search is a Spring Boot REST API that allows users to satellite images. This React page communicates with the Raven Search application, which returns images from the NASA API.',
+    backendSwaggerUrl: 'http://localhost:5000/',
+    createdBy: 'Dexter Haehnichen',
+    repositoryUrl: 'https://github.com/LEAGUE-Level7/Raven-Search'
 };
 
 /*

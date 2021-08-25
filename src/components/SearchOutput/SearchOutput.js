@@ -17,16 +17,7 @@ const SearchOutput = (props) => {
     let searchResults = null;
     if (props.results) {
         searchResults =
-            props.results.map((result, index) => {
-                return (
-                    <SearchResult
-                        key={index}
-                        title={result.title}
-                        authors={result.authors}
-                        link={result.link}
-                    />
-                );
-            })
+            <Image></Image>
     }
 
     return (

@@ -7,38 +7,39 @@ import {properties} from './properties';
 import classes from './App.module.css';
 
 function App() {
-    const [input, setInput] = useState('');
+    const [inputLat, setInputLat] = useState('');
+    const [inputLon, setInputLon] = useState('');
+    const [inputDim, setInputDim] = useState('');
+    const [inputDate, setInputDate] = useState('');
+
     const [output, setOutput] = useState([]);
 
-    const searchHandler = query => {
-        console.log("[App]:  Doing an AJAX call for query='" + query + "'.");
-        setInput(query);
+    const searchHandler = (lat, lon, dim, date) => {
+        setInputLat(lat);
+        setInputLon(lon);
+        setInputDim(dim);
+        setInputDate(date);
         setOutput([]);
-        fetch(properties.endpoint + query, {
+
+        fetch(properties.endpoint + "?date=" + date + "&dim=" + dim + "&lat=" + lat + "&lon=" + lon, {
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'image/png'
             },
             method: 'GET',
             mode: 'cors'
         })
             .then(response => {
                 if (!response.ok) {
-                    const term = null;
-                    setInput(term);
+                    setInputLat(null);
+                    setInputLon(null);
+                    setInputDim(null);
+                    setInputDate(null);
                     throw new Error("Not 2xx response")
                 } else {
-                    return response.json()
+                    return setOutput(response);
                 }
             })
-            .then(data => {
-                    const results = [];
-                    data.forEach(datum => {
-                        results.push(datum)
-                    });
-                    setOutput(results);
-            }, (error) => {
-                console.log(error);
-            });
+
     }
 
     return (
@@ -50,7 +51,7 @@ function App() {
             </header>
             <main>
                 <SearchInput submitHandler={searchHandler}/>
-                <SearchOutput term={input} results={output}/>
+                <SearchOutput term={null} results={output}/>
             </main>
             <footer>
                 <Footer/>
