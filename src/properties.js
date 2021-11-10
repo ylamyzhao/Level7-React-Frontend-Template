@@ -1,10 +1,10 @@
 export const properties = {
-    courseName: 'Level 7 Animal Search',
-    endpoint: 'https://cheetah.api.jointheleague.org?q=',
-    description: 'Here is a brief description of the project.  Try to keep it to two or three sentences',
-    backendSwaggerUrl: 'https://cheetah.api.jointheleague.org/',
-    createdBy: 'Student One, Student Two, Student Three',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Cheetah-Search'
+    courseName: 'Level 7 Hyena Search',
+    endpoint: 'http://localhost:5000/searchQuoteResults?q=',
+    description: 'This application uses the YahooFinance API to search for news articles on that particular stock.',
+    backendSwaggerUrl: 'http://localhost:5000/',
+    createdBy: 'Lucas Khattar',
+    repositoryUrl: 'https://github.com/LEAGUE-Level7/Hyena-Search'
 };
 
 /*

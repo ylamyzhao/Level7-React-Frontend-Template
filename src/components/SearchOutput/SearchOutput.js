@@ -22,7 +22,7 @@ const SearchOutput = (props) => {
                     <SearchResult
                         key={index}
                         title={result.title}
-                        authors={result.authors}
+                        publisher={result.publisher}
                         link={result.link}
                     />
                 );
