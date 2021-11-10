@@ -1,6 +1,6 @@
 import React from "react";
 import classes from './SearchResult.module.css';
-
+//Had to add @CrossOrigin to QuoteController class on backend
 const SearchResult = (props) => {
     console.log(props);
     return (
