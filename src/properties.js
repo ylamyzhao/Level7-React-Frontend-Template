@@ -1,10 +1,10 @@
 export const properties = {
-    courseName: 'Level 7 Animal Search',
+    courseName: 'Level 7 Formula One Constructors',
     endpoint: 'https://cheetah.api.jointheleague.org?q=',
-    description: 'Here is a brief description of the project.  Try to keep it to two or three sentences',
-    backendSwaggerUrl: 'https://cheetah.api.jointheleague.org/',
-    createdBy: 'Student One, Student Two, Student Three',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Cheetah-Search'
+    description: 'Search for constructors (teams) for Formula One by year!',
+    backendSwaggerUrl: 'http://localhost:5000/',
+    createdBy: 'Millan Kumar',
+    repositoryUrl: 'https://github.com/LEAGUE-Level7/F1-Stats-Search/tree/master'
 };
 
 /*

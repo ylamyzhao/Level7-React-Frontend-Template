@@ -6,7 +6,7 @@ import classes from './SearchOutput.module.css';
 const SearchOutput = (props) => {
     let message = null;
 
-    if (props.term && props.results.length !== 0) {
+    if (props.term && props.MRData.ConstructorTable.Constructors.length !== 0) {
         message = <p>Showing {props.results.length} results</p>;
     } else if (props.term) {
         message = <Spinner/>;
@@ -15,22 +15,22 @@ const SearchOutput = (props) => {
     }
 
     let searchResults = null;
-    if (props.results) {
+    if (props.MRData.ConstructorTable.Constructors) {
         searchResults =
-            props.results.map((result, index) => {
+            props.results.map((c, index) => {
                 return (
                     <SearchResult
                         key={index}
-                        title={result.title}
-                        authors={result.authors}
-                        link={result.link}
+                        name={c.name}
+                        url={c.url}
+                        nationality={c.nationality}
                     />
                 );
             })
     }
 
     return (
-        <div className={classes.Result}>
+        <div className={classes.MRData}>
             {message}
             {searchResults}
         </div>
