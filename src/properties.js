@@ -1,10 +1,10 @@
 export const properties = {
-    courseName: 'Level 7 Animal Search',
-    endpoint: 'https://cheetah.api.jointheleague.org?q=',
-    description: 'Here is a brief description of the project.  Try to keep it to two or three sentences',
-    backendSwaggerUrl: 'https://cheetah.api.jointheleague.org/',
-    createdBy: 'Student One, Student Two, Student Three',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Cheetah-Search'
+    courseName: 'Level 7 Yak Search',
+    endpoint: 'http://localhost:5000/searchCityWeather?q=',
+    description: 'Displays information about the weather conditions at a provided city. Weather information provided by weatherapi.com.',
+    backendSwaggerUrl: 'http://localhost:5000/',
+    createdBy: 'Riley Zhu',
+    repositoryUrl: 'https://github.com/LEAGUE-Level7/Yak-Weather'
 };
 
 /*
