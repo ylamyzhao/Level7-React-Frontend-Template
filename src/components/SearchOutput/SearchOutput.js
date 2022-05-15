@@ -6,8 +6,10 @@ import classes from './SearchOutput.module.css';
 const SearchOutput = (props) => {
     let message = null;
 
+    console.log("A");
+    console.log(props);
     if (props.term && props.MRData.ConstructorTable.Constructors.length !== 0) {
-        message = <p>Showing {props.results.length} results</p>;
+        message = <p>Showing {props.MRData.ConstructorTable.Constructors.length} results</p>;
     } else if (props.term) {
         message = <Spinner/>;
     } else if (props.term === null){
@@ -15,7 +17,9 @@ const SearchOutput = (props) => {
     }
 
     let searchResults = null;
-    if (props.MRData.ConstructorTable.Constructors) {
+    console.log("B");
+    console.log(props);
+    if (props.MRData) {
         searchResults =
             props.results.map((c, index) => {
                 return (

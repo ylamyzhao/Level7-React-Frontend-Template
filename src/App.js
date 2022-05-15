@@ -11,9 +11,13 @@ function App() {
     const [output, setOutput] = useState([]);
 
     const searchHandler = query => {
-        console.log("[App]:  Doing an AJAX call for query='" + query + "'.");
+        console.log("[App]:  Doing an AJAX call for year='" + query + "'.");
         setInput(query);
         setOutput([]);
+
+        console.log("C");
+        console.log(properties.endpoint + query);
+
         fetch(properties.endpoint + query, {
             headers: {
                 'Content-Type': 'application/json'
@@ -32,13 +36,21 @@ function App() {
             })
             .then(data => {
                     const results = [];
-                    data.forEach(datum => {
-                        results.push(datum)
-                    });
+//                    data.forEach(datum => {
+//                        results.push(datum)
+//                    });
+                    console.log("E");
+                    console.log(data);
+
+                    results.push(data);
                     setOutput(results);
             }, (error) => {
+                console.log("F");
                 console.log(error);
             });
+
+            console.log("D");
+            console.log(output);
     }
 
     return (

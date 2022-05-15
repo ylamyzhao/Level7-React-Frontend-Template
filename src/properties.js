@@ -1,8 +1,8 @@
 export const properties = {
     courseName: 'Level 7 Formula One Constructors',
-    endpoint: 'https://cheetah.api.jointheleague.org?q=',
+    endpoint: 'http://localhost:5000/searchLocResults?year=',
     description: 'Search for constructors (teams) for Formula One by year!',
-    backendSwaggerUrl: 'http://localhost:5000/',
+    backendSwaggerUrl: 'http://localhost:5000/searchLocResults?year=',
     createdBy: 'Millan Kumar',
     repositoryUrl: 'https://github.com/LEAGUE-Level7/F1-Stats-Search/tree/master'
 };
