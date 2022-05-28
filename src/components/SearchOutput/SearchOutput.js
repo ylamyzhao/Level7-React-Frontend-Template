@@ -20,10 +20,7 @@ const SearchOutput = (props) => {
             props.results.map((result, index) => {
                 return (
                     <SearchResult
-                        key={index}
-                        title={result.title}
-                        authors={result.authors}
-                        link={result.link}
+                        state={result.state}
                     />
                 );
             })

@@ -1,15 +1,14 @@
 export const properties = {
-    courseName: 'Level 7 Animal Search',
-    endpoint: 'https://cheetah.api.jointheleague.org?q=',
-    description: 'Here is a brief description of the project.  Try to keep it to two or three sentences',
-    backendSwaggerUrl: 'https://cheetah.api.jointheleague.org/',
-    createdBy: 'Student One, Student Two, Student Three',
-    repositoryUrl: 'https://github.com/LEAGUE-Level7/Cheetah-Search'
+    courseName: 'Level 7 STEM Degrees by Gender',
+    endpoint: 'http://localhost:5000/searchACSResults',
+    description: 'This application retrieves data from the US Census Bureau to return the number of people acquiring stem degrees (women and men) in the given state.',
+    backendSwaggerUrl: 'http://localhost:5000/',
+    createdBy: 'Amy Zhao',
+    repositoryUrl: 'https://github.com/ylamyzhao/STEM-DegreeAnalysis'
 };
 
 /*
 It is likely that you will also need to change the object that the frontend is expecting to receive from the service.
-
 
 SearchResult.js
 Change this to match the structure of your object.  Note that for cheetah search, it uses the map() function to
