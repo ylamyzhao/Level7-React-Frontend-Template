@@ -1,7 +1,7 @@
 export const properties = {
-    courseName: 'Level 7 STEM Degrees by Gender',
-    endpoint: 'http://localhost:5000/searchACSResults',
-    description: 'This application retrieves data from the US Census Bureau to return the number of people acquiring stem degrees (women and men) in the given state.',
+    courseName: 'Level 7 STEM Degrees Search',
+    endpoint: 'http://localhost:5000/searchACSResults?state=',
+    description: 'This is a Spring Boot REST API that retrieves data from the US Census Bureau to return the number of people acquiring stem degrees (women and men) in the given state, which is displayed by this React page.',
     backendSwaggerUrl: 'http://localhost:5000/',
     createdBy: 'Amy Zhao',
     repositoryUrl: 'https://github.com/ylamyzhao/STEM-DegreeAnalysis'

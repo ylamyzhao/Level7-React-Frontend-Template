@@ -20,7 +20,10 @@ const SearchOutput = (props) => {
             props.results.map((result, index) => {
                 return (
                     <SearchResult
+                        key={index}
                         state={result.state}
+                        degreeEarnedByMen={result.degreeEarnedByMen}
+                        degreeEarnedByWomen={result.degreeEarnedByWomen}
                     />
                 );
             })
