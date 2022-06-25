@@ -7,10 +7,9 @@ const SearchOutput = (props) => {
     let message = null;
 
     if (props.term && props.results.length !== 0) {
-        message = <p>Showing {props.results.length} results</p>;
+        message = <p>Showing {props.results.length} results </p>;
     } else if (props.term) {
-//        message = <Spinner/>;
-        message = <p>Showing {props.results.length} results</p>;
+        message = <Spinner/>;
     } else if (props.term === null){
         message = "no results found";
     }
@@ -21,6 +20,7 @@ const SearchOutput = (props) => {
             props.results.map((result, index) => {
                 return (
                     <SearchResult
+                        key={index}
                         state={result.state}
                         degreeEarnedByMen={result.degreeEarnedByMen}
                         degreeEarnedByWomen={result.degreeEarnedByWomen}

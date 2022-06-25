@@ -5,10 +5,7 @@ const SearchResult = (props) => {
     console.log(props);
     return (
         <article className={classes.Result}>
-            <h1>state: {props.state}</h1>
-            <h3>degreeEarnedByMen: {props.degreeEarnedByMen}</h3>
-            <h5>degreeEarnedByWomen: {props.degreeEarnedByWomen}</h5>
-
+            <h2>In {props.state.split('"').join('')}, there are {props.degreeEarnedByMen.split('"').join('')} STEM degrees earned by men and {props.degreeEarnedByWomen.split('"').join('')} STEM degrees earned by women.</h2>
         </article>
     );
 }
